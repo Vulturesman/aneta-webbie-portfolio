@@ -22,7 +22,7 @@ header {
     justify-content: center;
     height: 3rem;
     position: sticky;
-    /* needs to be adjusted to keep Make navigation in a way so that it will stick to the top of the page when scrolling.*/
+    top: 0;
 }
 
 .img-container {
