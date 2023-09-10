@@ -46,34 +46,16 @@ nav>a {
     opacity: 0.7;
     text-decoration: none;
     text-transform: uppercase;
-    width: 10%;
+    width: 20%;
+    height: 3rem;
+    text-align: center;
+    padding-top: 1rem;
 }
 
-/* .nav-top a:before,
-.nav-top a:after {
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    top: 0px;
-    content: '';
-    background: #54be90;
-    opacity: 0.3;
-    transition: all 0.3s;
+nav>a:hover {
+    background-color: #54be90;
+    opacity: 1;
 }
-
-.nav-top a:before {
-    left: 0px;
-}
-
-.nav-top a:after {
-    right: 0px;
-}
-
-.nav-top a:hover:before,
-.nav-top a:hover:after {
-    width: 100%;
-} */
-
 
 main {
     width: 90%;
@@ -175,7 +157,7 @@ footer {
 }
 
 .my-skills {
-    padding: 3.5rem 10% 7rem 10%;
+    padding: 2rem 10% 7rem 10%;
 }
 
 .heading-2 {
@@ -251,7 +233,7 @@ footer {
 }
 
 .my-portfolio {
-    padding: 3.5rem 5% 1.8rem 5%;
+    padding: 2rem 5% 1.8rem 5%;
     background-color: #54be90;
     height: 52rem;
 }
@@ -362,7 +344,7 @@ footer {
     font-weight: 300;
     padding: 0.25rem;
     box-shadow: 2px 5px 10px grey;
-
+    cursor: pointer;
 }
 
 .about-me__text-container {
@@ -407,3 +389,121 @@ footer {
     margin-top: 3rem;
     width: 10%;
 }
+
+.contact-me {
+    padding: 5rem 15% 1.8rem 15%;
+    background-color: #54be90;
+    height: 47rem;
+    color: white;
+}
+
+.contact-me>h2 {
+    color: white;
+    margin: 0;
+    padding-bottom: 4rem;
+}
+
+.contact-me__formfirst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contact-me__formfirst input {
+    width: 48%;
+    background-color: #54be90;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: 0.5;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-me__formsecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+.contact-me__formsecond>label {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 5400;
+    opacity: 0.5;
+}
+
+#my-message {
+    height: 10rem;
+    border-radius: 10px;
+    border: 2px solid #54be90;
+    text-align: justify, start;
+}
+
+.contact-me__formsecond>input[type=submit] {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background-color: #232323;
+    color: white;
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+
+footer {
+    height: 25rem;
+    background-color: #ebebeb;
+}
+
+.footer-class {
+    padding: 3.5rem 7% 1.8rem 7%;
+    text-align: center;
+}
+
+footer img {
+    width: 7%;
+}
+
+.meeting__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meeting__container>hr {
+    align-self: center;
+    border: 5px solid #54be90;
+    border-radius: 5px;
+    width: 30%;
+    margin: -1rem 0 0 0;
+}
+
+.meeting__container>h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #232323;
+    margin-bottom: 3rem;
+}
+
+.footer__logo-container {
+    text-align: center;
+    margin-bottom: 3rem;
+    opacity: 0.7;
+}
+
+.footer-class p>a {
+    text-decoration: none;
+}
+
+
+/* input text My Message must be adjuste so the text starts from left upper corner and breaks in the end of the line */
