@@ -23,6 +23,7 @@ header {
     height: 3rem;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .img-container {
@@ -38,7 +39,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 80%;
-
 }
 
 nav>a {
@@ -46,7 +46,34 @@ nav>a {
     opacity: 0.7;
     text-decoration: none;
     text-transform: uppercase;
+    width: 10%;
 }
+
+/* .nav-top a:before,
+.nav-top a:after {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #54be90;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.nav-top a:before {
+    left: 0px;
+}
+
+.nav-top a:after {
+    right: 0px;
+}
+
+.nav-top a:hover:before,
+.nav-top a:hover:after {
+    width: 100%;
+} */
+
 
 main {
     width: 90%;
@@ -226,7 +253,7 @@ footer {
 .my-portfolio {
     padding: 3.5rem 5% 1.8rem 5%;
     background-color: #54be90;
-    height: 40rem;
+    height: 52rem;
 }
 
 .my-portfolio>h2 {
@@ -236,11 +263,15 @@ footer {
 .my-portfolio__container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .my-portfolio__items {
     width: 30%;
     background-color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .my-portfolio__items>img {
@@ -248,6 +279,8 @@ footer {
     margin: 0;
     padding: 0;
     background-color: #ebebeb;
+    width: 100%;
+    max-height: 8rem;
 }
 
 .my-portfolio__items>p,
@@ -257,6 +290,120 @@ footer {
     background-color: #ebebeb;
 }
 
+.my-portfolio__items>h4 {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.my-portfolio__items-high {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    margin: 0;
+    padding-bottom: 0.6rem;
+    background-color: #ebebeb;
+
+}
+
 .my-portfolio__items>p {
     text-align: center;
+    padding: 0.8rem;
+    padding-bottom: 0;
+}
+
+#my-portfolio__items-highlighted {
+    background-color: black;
+}
+
+.my-portfolio__items-high>h4 {
+    text-align: center;
+    background-color: #54be90;
+    margin: 0 2rem;
+    border-radius: 5%;
+    height: 1.5rem;
+    color: white;
+    font-weight: 300;
+    padding: 0.25rem;
+    box-shadow: 2px 5px 10px grey;
+}
+
+#my-portfolio__items-highlighted>img {
+    opacity: 1;
+}
+
+.about-me {
+    padding: 5rem 5% 1.8rem 5%;
+    background-color: #ebebeb;
+    height: 40rem;
+}
+
+.about-me__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me>h2 {
+    color: #232323;
+    margin-top: 0;
+}
+
+.about-me img {
+    border-radius: 50%;
+    width: 35%;
+    align-self: center;
+}
+
+.green-button {
+    text-align: center;
+    background-color: #54be90;
+    border-radius: 5%;
+    height: 1.5rem;
+    width: 10rem;
+    color: white;
+    font-weight: 300;
+    padding: 0.25rem;
+    box-shadow: 2px 5px 10px grey;
+
+}
+
+.about-me__text-container {
+    width: 50%;
+}
+
+.about-me__text-container>hr {
+    border: 5px solid #54be90;
+    border-radius: 5px;
+    width: 60%;
+    margin: -15px 0 0 0;
+}
+
+.about-me__text-container__bigger {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social {
+    padding: 4rem 5% 1.8rem 5%;
+    background-color: #232323;
+    height: 20rem;
+}
+
+.social>h2 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.social__logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px
+}
+
+.social__logo {
+    margin-top: 3rem;
+    width: 10%;
 }
