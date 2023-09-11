@@ -447,6 +447,7 @@ footer {
     border-radius: 10px;
     border: 2px solid #54be90;
     text-align: justify, start;
+    padding: 1rem;
 }
 
 .contact-me__formsecond>input[type=submit] {
